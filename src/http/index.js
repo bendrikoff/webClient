@@ -1,5 +1,5 @@
 import axios from "axios";
-axios.defaults.baseURL = '51.250.99.246:1337';
+axios.defaults.baseURL = 'http://51.250.99.246:1337/';
 
 const $host = axios.create({
 
