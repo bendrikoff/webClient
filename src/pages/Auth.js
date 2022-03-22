@@ -44,7 +44,7 @@ const Auth = observer(() => {
     }
 
     const validation=()=>{
-        if(username==''){
+        if(!isLogin&&username==''){
             setUsernameError('Поле не может быть пустым');
             return false;
         }
@@ -56,7 +56,7 @@ const Auth = observer(() => {
             setPasswordError('Поле не может быть пустым');
             return false;
         }
-        if(username.length<3){
+        if(!isLogin&&username.length<3){
             setPasswordError('Слишком короткое имя');
             return false;
         }
